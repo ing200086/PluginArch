@@ -1,0 +1,263 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"Plug",
+				"PluginRegistrarProvider"
+			],
+			[
+				"_",
+				"_regProvider"
+			],
+			[
+				"Plugin",
+				"PluginRegistrarProviderConstructedEmpty"
+			],
+			[
+				"Mock",
+				"MockSharedLibraryLoader"
+			],
+			[
+				"Plugi",
+				"PluginConstructedWithNameAndMockSharedLibLoader"
+			],
+			[
+				"Plu",
+				"PluginInstanceConstructedWithNameAndMockSharedLibLoader"
+			],
+			[
+				"Pul",
+				"PluginInstanceConstructedWithNameAndMockSharedLibLoader"
+			],
+			[
+				"I",
+				"ISharedLibraryLoader"
+			],
+			[
+				"A",
+				"ASSERT_THAT"
+			],
+			[
+				"plugin",
+				"pluginName"
+			],
+			[
+				"plu",
+				"pluginName"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 54.0,
+		"selected_items":
+		[
+			[
+				"#ifn",
+				"Snippet: #ifndef … #define … #endif"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"Instal",
+				"Package Control: Install Package"
+			],
+			[
+				"#	",
+				"Snippet: #ifndef … #define … #endif"
+			],
+			[
+				"termin",
+				"Terminal: Open in project folder"
+			],
+			[
+				"git",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/daniel/Workspace/PluginArch/test/KernelTest/KernelTest.h",
+		"/home/daniel/Workspace/PluginArch/src/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/src/Kernel/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/test/KernelTest/KernelTestMocks.h",
+		"/home/daniel/Workspace/PluginArch/test/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/test/UnitTests/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/test/KernelTest/KernelTest.cpp",
+		"/home/daniel/Workspace/PluginArch/test/KernelTest/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/src/Kernel/Kernel.h",
+		"/home/daniel/Workspace/PluginArch/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/test/KernelTest/Kernel.h",
+		"/home/daniel/Workspace/PluginArch/src/PluginRegistrarProvider/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/test/PluginRegistrarProviderTest/CMakeLists.txt",
+		"/home/daniel/Workspace/PluginArch/test/PluginRegistrarProviderTest/PluginRegistrarProviderTest.h",
+		"/home/daniel/Workspace/PluginArch/test/PluginRegistrarProviderTest/PluginRegistrarProviderTestMocks.h",
+		"/home/daniel/Workspace/PluginArch/test/PluginRegistrarProviderTest/PluginRegistrarProviderTest.cpp",
+		"/home/daniel/Workspace/PluginArch/test/PluginRegistrarProvider/PluginRegistrarProviderTest.h",
+		"/home/daniel/Workspace/PluginArch/test/PluginRegistrarProvider/PluginRegistrarProviderTest.cpp",
+		"/home/daniel/Workspace/PluginArch/src/PluginRegistrarFactory/PluginRegistrarFactory.h",
+		"/home/daniel/Workspace/PluginArch/terminal.glue",
+		"/usr/share/applications/sublime-text2.desktop",
+		"/usr/share/applications/gksu.desktop",
+		"/usr/share/applications/sublime-text-2.desktop",
+		"/usr/share/applications/.desktop",
+		"/home/daniel/Workspace/PluginArch/test/PluginTest/Plugin.h",
+		"/home/daniel/Workspace/PluginArch/test/PluginTest/PluginTest.cpp",
+		"/home/daniel/Workspace/PluginArch/test/PluginTest/CMakeLists.txt",
+		"/usr/share/applications/.desktep",
+		"/home/daniel/Workspace/PluginArch/test/PluginTest/main.cpp",
+		"/home/daniel/Workspace/PluginArch/test/KernelTest/main.cpp",
+		"/home/daniel/Workspace/PluginArch/test/Kernel/KernelTest.h",
+		"/home/daniel/Workspace/PluginArch/test/Kernel/CMakeLists.txt",
+		"/home/daniel/.gitconfig"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"forService",
+			"IProviderStorageService",
+			"IPluginRegistrarFactory",
+			"__",
+			"PluginRegistrarProviderConstructedEmpty",
+			"T(ConstructRegistrarProvider",
+			"Factory",
+			"FACTORY",
+			"rovider",
+			"Factory",
+			"FACTORY",
+			"MGenericPlugin",
+			"ockPlugin",
+			"MockPlugin",
+			"\"exPlugin\"",
+			"IPluginInstarceConstructed",
+			"Location",
+			"libLocation_SRCS"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 340.0,
+	"status_bar_visible": true
+}

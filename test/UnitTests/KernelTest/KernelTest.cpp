@@ -3,21 +3,21 @@
 	using ::testing::Return;
 
 TEST_F(KernelLoadedWithMockPlugin, HasPluginWhichIsLoaded) {
-	EXPECT_CALL(_regFactory, forService(_))
+	EXPECT_CALL(_regFactory, For(_))
 			.Times(1);
 	KernelLoadsPlugin();
 	ASSERT_TRUE(_pluginKernel->hasPlugin(_pluginNameLoaded));
 }
 
 TEST_F(KernelLoadedWithMockPlugin, HasOnlyLoadedPlugin) {
-	EXPECT_CALL(_regFactory, forService(_))
+	EXPECT_CALL(_regFactory, For(_))
 			.Times(1);
 	KernelLoadsPlugin();
 	ASSERT_FALSE(_pluginKernel->hasPlugin(_pluginNameNotLoaded));
 }
 
 TEST_F(KernelLoadedWithMockPlugin, RegistersValidService) {
-	EXPECT_CALL(_regFactory, forService("ValidService"))
+	EXPECT_CALL(_regFactory, For("ValidService"))
 			.Times(1)
 			.WillOnce(Return(new MockProviderStorageService()));
 	EXPECT_CALL(_plugin, ServiceType())
@@ -32,7 +32,7 @@ ACTION(throwServiceNotHandled) {
 }
 
 TEST_F(KernelLoadedWithMockPlugin, RegistersInvalidServiceThrowsException) {
-	EXPECT_CALL(_regFactory, forService("ServiceUnhandledByRegistrationFactory"))
+	EXPECT_CALL(_regFactory, For("ServiceUnhandledByRegistrationFactory"))
 			.Times(1)
 			.WillOnce(throwServiceNotHandled());
 	EXPECT_CALL(_plugin, ServiceType())

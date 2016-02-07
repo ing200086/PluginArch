@@ -6,7 +6,7 @@ file(GLOB SRCS *.cpp *.h)
 ADD_EXECUTABLE(${PROJECT_NAME} ${SRCS})
 
 TARGET_LINK_LIBRARIES(${PROJECT_NAME}
-	libPlugin
+	libKernel
     libgtest
     libgmock
 )

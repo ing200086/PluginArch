@@ -51,7 +51,4 @@ set_target_properties(libgmock PROPERTIES
 # I couldn't make it work with INTERFACE_INCLUDE_DIRECTORIES
 include_directories("${source_dir}/include")
 
-add_subdirectory(SharedLibraryTest)
-add_subdirectory(PluginTest)
-add_subdirectory(KernelTest)
-add_subdirectory(PluginRegistrarProviderTest)
+add_subdirectory(UnitTests)

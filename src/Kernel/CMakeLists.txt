@@ -1,17 +1,20 @@
 cmake_minimum_required(VERSION 3.1.0)
-project(libKernel)
+project(libKernel C CXX)
 
-set(libKernel_SRCS
-    Kernel.h
-)
+file(GLOB SRCS *.cpp *.h)
 
 # Declare the library
-add_library(libKernel STATIC
-    ${libKernel_SRCS}
+add_library(${PROJECT_NAME} STATIC
+    ${SRCS}
 )
+
+set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX)
+
+# target_link_libraries(${PROJECT_NAME}
+# 	libSharedLibraryLoader)
 
 # Specify here the include directories exported
 # by this library
-target_include_directories(libKernel PUBLIC
+target_include_directories(${PROJECT_NAME} PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
