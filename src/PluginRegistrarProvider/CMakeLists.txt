@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.0)
-project(libPluginRegistrarFactory C CXX)
+project(libPluginRegistrarProvider C CXX)
 
 file(GLOB SRCS *.cpp *.h)
 
