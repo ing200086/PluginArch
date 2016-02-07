@@ -8,7 +8,7 @@
 			"path": "test/UnitTests"
 		},
 		{
-			"path": "build/Testing/Temporary"
+			"path": "test/AcceptanceTests"
 		}
 	]
 }

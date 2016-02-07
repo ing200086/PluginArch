@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1.0)
-project (PluginArch_KernelTest)
+project (KernelTest)
 
 file(GLOB SRCS *.cpp *.h ../main.cpp)
 

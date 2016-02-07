@@ -1,8 +1,6 @@
 #ifndef __KERNEL_H__
 #define __KERNEL_H__
 
-// #include "IPluginToRegister.h"
-// #include "IPluginRegistrarService.h"
 #include "IPluginRegistrarProvider.h"
 
 #include <string>
@@ -21,6 +19,10 @@ public:
 
 	void loadPlugin(IPluginToRegister &plugin);
 	// bool hasPlugin(const string &pluginName);
+
+	void listGraphicsDrivers(string &output) {
+		output = "woo";
+	}
 };
 
 

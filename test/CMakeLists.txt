@@ -52,3 +52,4 @@ set_target_properties(libgmock PROPERTIES
 include_directories("${source_dir}/include")
 
 add_subdirectory(UnitTests)
+add_subdirectory(AcceptanceTests)

@@ -14,7 +14,7 @@ bool Kernel::IsInLoadedPluginVector(const string &pluginName) {
 }
 
 void Kernel::loadPlugin(IPluginToRegister &plugin) {
-	_regFactory->For(plugin);
+	_regFactory->For(plugin.ID())->Register(plugin);
 	// _loadedPlugins.push_back(pluginName);
 }
 

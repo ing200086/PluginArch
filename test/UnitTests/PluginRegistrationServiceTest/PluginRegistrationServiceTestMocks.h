@@ -4,8 +4,13 @@
 #include "gmock/gmock.h"
 
 class StubPluginToRegister {
+	string _myID;
 public:
-	string ID() { return "pluginA"; }
+	void SetID(const string &ID) {
+		_myID = ID;
+	}
+
+	string ID() { return _myID; }
 };
 
 

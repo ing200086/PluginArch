@@ -1,50 +1,34 @@
 #include "KernelTest.h"
 	using ::testing::_;
+	using ::testing::Eq;
 	using ::testing::Return;
 
+#include <string>
+	using ::std::string;
+
 TEST_F(KernelLoadedWithMockPlugin, HasPluginWhichIsLoaded) {
+	string logString;
 	MockPluginToRegister _plugin;
-	EXPECT_CALL(_regFactory, For(_))
+
+	EXPECT_CALL(_regService, Register(_))
 			.Times(1);
+	EXPECT_CALL(_regFactory, For(_))
+			.Times(1)
+			.WillOnce(Return(&_regService));
+
 	(*_pluginKernel).loadPlugin(_plugin);
 	// ASSERT_TRUE(_pluginKernel->hasPlugin(_pluginNameLoaded));
 }
 
-TEST_F(KernelLoadedWithMockPlugin, HasOnlyLoadedPlugin) {
-	// EXPECT_CALL(_regFactory, For(_))
-	// 		.Times(1);
-	// KernelLoadsPlugin();
-	// ASSERT_FALSE(_pluginKernel->hasPlugin(_pluginNameNotLoaded));
+TEST_F(KernelLoadedWithMockPlugin, ListsGraphicsDrivers) {
+	EXPECT_CALL(_regService, ListRegistered())
+			.Times(1)
+			.WillOnce(Return("woo"));
+	EXPECT_CALL(_regFactory, For("GraphicsDrivers"))
+			.Times(1)
+			.WillOnce(Return(&_regService));
+
+	(*_pluginKernel).listGraphicsDrivers(logString);
+
+	ASSERT_THAT(logString, Eq("woo"));
 }
-
-// TEST_F(KernelLoadedWithMockPlugin, RegistersValidService) {
-// 	// EXPECT_CALL(_regFactory, For("ValidService"))
-// 	// 		.Times(1)
-// 	// 		.WillOnce(Return(new MockProviderStorageService()));
-// 	// EXPECT_CALL(_plugin, ServiceType())
-// 	// 		.Times(1)
-// 	// 		.WillOnce(Return("ValidService"));
-
-// 	KernelLoadsPlugin();
-// }
-
-// ACTION(throwServiceNotHandled) {
-// 	throw ::std::exception();
-// }
-
-// TEST_F(KernelLoadedWithMockPlugin, RegistersInvalidServiceThrowsException) {
-// 	// EXPECT_CALL(_regFactory, For("ServiceUnhandledByRegistrationFactory"))
-// 	// 		.Times(1)
-// 	// 		.WillOnce(throwServiceNotHandled());
-// 	// EXPECT_CALL(_plugin, ServiceType())
-// 	// 		.Times(1)
-// 	// 		.WillOnce(Return("ServiceUnhandledByRegistrationFactory"));
-
-// 	try {
-// 		KernelLoadsPlugin();
-// 		FAIL();
-// 	} catch (...) {
-
-// 	}
-	
-// }

@@ -4,18 +4,18 @@
 #include "Kernel.h"
 #include "gmock/gmock.h"
 
-class IPluginToRegister {};
-class IPluginRegistrarService {};
-
 class MockPluginToRegister: public IPluginToRegister {
 };
 
-class MockProviderStorageService: public IPluginRegistrarService {
+class MockPluginRegistrationService: public IPluginRegistrarService {
+public:
+	MOCK_METHOD1(Register, void(IPluginToRegister &plugin));
+	MOCK_METHOD0(ListRegistered, string());
 };
 
 class MockPluginRegistrarFactory: public IPluginRegistrarProvider {
 public:
-	MOCK_METHOD1(For, IPluginRegistrarService *(IPluginToRegister &plugin));
+	MOCK_METHOD1(For, IPluginRegistrarService *(const string &pluginService));
 };
 
 #endif

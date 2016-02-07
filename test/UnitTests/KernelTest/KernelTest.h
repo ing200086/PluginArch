@@ -9,6 +9,7 @@
 class KernelLoadedWithMockPlugin: public Test {
 public:
 	MockPluginRegistrarFactory _regFactory;
+	MockPluginRegistrationService _regService;
 	Kernel *_pluginKernel;
 
 protected:
