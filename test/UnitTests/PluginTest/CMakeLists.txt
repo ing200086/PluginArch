@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1.0)
 project (PluginArch_PluginTest)
 
-file(GLOB SRCS *.cpp *.h)
+file(GLOB SRCS *.cpp *.h ../main.cpp)
 
 ADD_EXECUTABLE(${PROJECT_NAME} ${SRCS})
 

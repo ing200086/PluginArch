@@ -6,12 +6,9 @@
 #include <map>
 	using ::std::map;
 
-class IPlugin {
-};
-
 class IPluginRegistrarService {
 public:
-	virtual void Register(IPlugin &plugin) =0;
+	virtual string AcceptsService() =0;
 };
 
 
@@ -20,8 +17,10 @@ class PluginRegistrarProvider {
 	RegistrarMap _pluginRegistrarMap;
 
 public:
-	void AddRegistrar(const string &serviceType, IPluginRegistrarService &reg) {
-		_pluginRegistrarMap.insert(RegistrarMap::value_type(serviceType, &reg));
+	void AddRegistrar(IPluginRegistrarService &reg) {
+		_pluginRegistrarMap.insert(
+			RegistrarMap::value_type(reg.AcceptsService(), &reg)
+			);
 	}
 
 	IPluginRegistrarService *For(const string &serviceType) {

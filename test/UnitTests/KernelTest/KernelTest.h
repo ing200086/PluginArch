@@ -8,17 +8,10 @@
 
 class KernelLoadedWithMockPlugin: public Test {
 public:
-	string _pluginNameLoaded = "A";
-	string _pluginNameNotLoaded = "B";
-	MockStoragePlugin _plugin;
-
 	MockPluginRegistrarFactory _regFactory;
 	Kernel *_pluginKernel;
 
 protected:
-	void KernelLoadsPlugin() {
-		_pluginKernel->loadPlugin(_pluginNameLoaded, _plugin);
-	}
 
 public:
 	KernelLoadedWithMockPlugin() {	}

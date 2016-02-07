@@ -9,14 +9,14 @@
 class PluginRegistrarProviderWithRegistrationServiceAdded: public Test {
 public:
 	PluginRegistrarProvider *_regProvider;
-	MockPluginRegistrarService _reg;
+	MockPluginRegistrarService _MockRegistrationService;
 
 	PluginRegistrarProviderWithRegistrationServiceAdded() {}
 	virtual ~PluginRegistrarProviderWithRegistrationServiceAdded() {}
 
 	virtual void SetUp() {
 		_regProvider = new PluginRegistrarProvider();
-		_regProvider->AddRegistrar("WidgetPlugin", _reg);
+		
 	}
 
 	virtual void TearDown() {}

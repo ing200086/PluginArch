@@ -6,7 +6,7 @@
 
 class MockPluginRegistrarService: public IPluginRegistrarService {
 public:
-	MOCK_METHOD1(Register, void(IPlugin &plugin));
+	MOCK_METHOD0(AcceptsService, string());
 };
 
 #endif
