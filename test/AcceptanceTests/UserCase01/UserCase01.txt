@@ -1,0 +1,13 @@
+Usercase Id: 01
+Title: User loads plugin into Kernel
+
+Preconditions:
+  1 - Valid plugin exists on the system.
+  2 - Kernel is loaded.
+
+User Steps:
+  1 - Plugin file is loaded as a plugin.
+  2 - The plugin is supplied to the kernel to be loaded.
+
+Postconditions:
+  1 - Plugin is reachable by the user through the kernel using the plugin's ID.
